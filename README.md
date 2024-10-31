@@ -9,11 +9,18 @@ u2data_all_shows_clean_final.csv
 $ head u2data_all_shows_clean_final.csv 
 "showID","tour","leg","date","venue","city","state","country","song_position","snippet","encore","song_title","show_url","song_url","song_lyrics"
 
-> u2data <- read_csv("u2data_all_shows_clean_final.csv")
-Rows: 39653 Columns: 15                                                                          
-── Column specification ─────────────────────────────────────────────────────────────────────────
+u2data <- read_csv("u2data_all_shows_clean_final.csv")
+
+Rows: 39653 Columns: 15
+
+Column specification
+
 Delimiter: ","
+
 chr  (10): tour, leg, venue, city, state, country, song_title, show_url, song_url, song_lyrics
+
 dbl   (2): showID, song_position
+
 lgl   (2): snippet, encore
+
 date  (1): date
